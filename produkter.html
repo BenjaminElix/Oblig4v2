@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Produkt</title>
+</head>
+<body>
+    <div id="grid-container">
+    <header>
+        <nav>
+            <i class="fa-solid fa-bars" style="color: #262b54;" id="burger-meny"></i>
+                <section>
+                     <h1><a href="index.html" id="logo">HubSoleSociety</a></h1>
+                </section>
+            <div class="symboler">
+                <a href="Chat.html" id="Chat1"><i class="fa-sharp fa-regular fa-comment fa-shake" style="color: #ff8800;"></i></a>
+                <i class="fa-sharp fa-regular fa-cart-shopping" style="color: #262b54;"></i>
+                <i class="fa-sharp fa-regular fa-user" style="color: #262b54;"></i>
+            </div>
+           
+        </nav>
+        <section id="søk">
+            <input type="text" placeholder="Search for your shoes..." >
+        </section>
+    </header>
+
+    <main>
+        <section id="ProduktsideBak">
+            <h1 id="ProduktsideProdukt"> Tumberlund</h1>
+            <section class="ProduktsideBilde">
+            
+                <img src="img/shoes-346986_1280.jpg" alt="Sko til salg">
+            </section>
+            <section id="dotter">
+                <i class="fa-solid fa-ellipsis" style="color: #262b54;"></i>
+            </section>
+            
+        </section>
+        <section id="backpro">
+                <section class="kostnad">
+                <section>
+                    <h2>2000 kr </h2>  
+                </section>
+                <section id="tilstand">
+                    <h3>Tilstand: lite brukt</h3>
+                </section>
+            </section>
+            <section id="size">
+                    <h3>Størrelse: 45</h3>
+                </section>
+            <article id="hjerte">
+                <i class="fa-solid fa-solid fa-heart" style="color: #ff0059;"></i>
+            </article>
+            <section id="produktback">
+                <section class="kjøp">
+                    <h2 id="plaserbud">Plasser bud</h2>
+                    <h2 id="kjøp">Kjøp</h2>
+                </section>
+
+                <section class="bud">
+                    <h2 id="krav">Krav</h2>
+                    <h2 id="bud">Bud</h2>
+                    <h2 id="salg">Salg</h2>
+                </section>
+            </section>
+        </section>
+        
+        <section class="bakselger">
+            <section class="profilselger">
+                <i class="fa-sharp fa-solid fa-id-card" style="color: #262b54;"></i>
+                <a href="Chat.html">David Bryan</a>
+            </section>
+            <section class="profilselger2">
+                <p id="veribruker">Verfisert selger</p>
+                <section>
+                    <i class="fa-regular fa-message" style="color: #262b54;"></i>
+                </section>
+                
+            </section>
+            <section class="sko-fargebak">
+                <section class="sko-info">
+                    <h4>Sko materiale: Lær</h4>
+                    <h4>Merke: Tumberlund</h4>
+                    <h4>Farge: Hvit</h4>
+                </section>
+            </section>
+            
+        </section>
+        
+    </main>
+
+    <footer>
+        <section>
+            <section class="salgavdavid">
+                <h3>Flere salg av David Bryan</h3>
+                <section class="sko-type">
+                    <section>
+                        <img src="img/partnerlook-4194531_1280.jpg" alt="Place Holder">
+                        <p>Sneakers</p>
+                    </section>
+                    <section>
+                        <img src="img/sneakers-2768263_1280.png" alt="Place Holder">
+                        <p>Flate Sko</p>
+                    </section>
+                    <section>
+                        <img src="img/oxford-3528032_1280.jpg" alt="Place Holder">
+                        <p>Oxfords</p>
+                    </section>
+                    <section>
+                        <img src="img/slipper-704705_1280.jpg" alt="Place Holder">
+                        <p>Tøfler</p>
+                    </section>             
+                    
+                </section>
+                
+            </section>
+    
+        </section>
+
+
+        <p id="kontakt">&copy; HubSoleSociety | Kontakt oss: HubSoleSociety@gmail.com</p>
+
+    </footer>
+    </div>
+
+    <script>
+        let x = document.querySelector(".navbar")
+
+document.getElementById("ham").addEventListener("click", (e) =>{
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+
+})
+    </script>
+
+</body>
+
+</html>

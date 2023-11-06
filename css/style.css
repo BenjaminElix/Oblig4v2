@@ -1,0 +1,1047 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'bearpawregular';
+    src: url('BEARPAW_-webfont.eot');
+    src: url('BEARPAW_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BEARPAW_-webfont.woff2') format('woff2'),
+         url('BEARPAW_-webfont.woff') format('woff'),
+         url('BEARPAW_-webfont.ttf') format('truetype'),
+         url('BEARPAW_-webfont.svg#bearpawregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer" ;
+}
+
+
+h1 {
+    font-size: 25px;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
+    display: grid;
+    grid-column: 1/-1;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    column-span: all;
+    background-color: #DCD6F7;
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+#burger-meny {
+    display: flex;
+    margin: 1rem;
+
+}
+
+#søk {
+    display: flex;
+    justify-content: center;
+    column-span: all;
+    box-sizing: border-box;
+    
+
+}
+
+#søk input{
+    font-size: 20px;
+    background-color: #DCD6F7;
+    border: none;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 1px;
+}
+
+.symboler {
+    margin: 1rem;
+}
+
+header nav div {
+    display: flex;
+    gap: 1rem;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #262B54;
+    margin: 0rem;
+    text-align: center;
+    font-family: "bearpawregular", Arial, Helvetica, sans-serif;
+    font-size: 35px;   
+    
+}
+
+
+.navbar {
+    display: none;
+    margin: 1rem;
+}
+
+.navbar a{
+    color:#262B54;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(36, 33, 33);
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+
+}
+
+.responsive a {
+    color: white;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-column: 1/-1;
+}
+
+main section img {
+    width: 100%;
+    
+    
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-column: 1/-1;
+}
+
+.reklame {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-top: 5px solid #F4EEFF;
+    border-bottom: 5px solid #F4EEFF;
+    
+}
+
+
+
+.marked {
+    display: flex;
+    grid-row: initial;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+
+
+.marked img {
+    border-radius: 10px;
+    border: 2px solid #262B54;
+    height: 29.333vw;
+    width: 26.667vw;
+    object-fit: cover;
+}
+
+.marked h3 {
+    color: #262B54;
+}
+
+.marked p{
+    color:#262B54;
+}
+
+
+.marked-fargebak {
+    background-color: #F4EEFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2.667vw;
+    
+    
+}
+
+#marked-text {
+    text-align: center;
+    color: #262B54;
+    padding-top: 10px;
+}
+
+
+
+
+#blagjennom {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0rem;
+    text-align: center;
+    background-color: #262B54;
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
+
+
+.populære-merker {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+    margin-top: 10px;
+ 
+ 
+
+}
+
+.populære-merker img {
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    height: 18.667vw;
+    width: 18.667vw;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 1rem;
+}
+
+.populære-merkerQ1 {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+    margin-top: 10px;
+ 
+ 
+
+}
+
+.populære-merkerQ1 img {
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    height: 18.667vw;
+    width: 18.667vw;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 1rem;
+}
+
+.pop-fargebak {
+    background-color:#F4EEFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 2.667vw;
+}
+
+#pop-text {
+    text-align: center;
+    color: #262B54;
+    padding-top: 10px;
+}
+
+.sko-type {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.sko-type img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #262B54;
+    
+}
+
+
+
+
+
+#Sko-type {
+    text-align: center;
+    color: #262B54;
+    padding-top: 10px;
+
+}
+
+#kontakt {
+    margin: 1rem;
+    color: #262B54;
+    padding-top: 30px;
+}
+
+
+p {
+    color: #262B54;
+}
+
+#ProduktsideBak{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.ProduktsideBilde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    object-fit:scale-down;
+    margin: 1rem;
+    height: 200px;
+    width: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    
+
+}
+
+
+
+#ProduktsideProdukt {
+    text-align: center;
+    justify-content: center;
+    color: #262B54;
+    font-size: 20px;
+}
+
+
+.kjøp {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+    
+    
+    
+}
+
+
+
+section.kjøp {
+    margin-bottom: 20px;
+
+}
+#hjerte {
+    text-align: center;
+    background-color: #D9D9D9;
+    padding-top: 5px;
+    
+}
+
+.bud {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    
+}
+
+#produktback {
+    background-color: #D9D9D9;
+}
+
+.kostnad {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    background-color: #D9D9D9;
+}
+
+#backpro {
+    background-color: #D9D9D9;
+}
+
+.fa-heart{
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.fa-id-card {
+    font-size: 30px;
+}
+
+.fa-message {
+    margin-left: 10px;
+    font-size: 30px;
+    
+}
+
+.profilselger {
+    display: flex;
+    margin: 1rem;
+}
+
+.profilselger2 {
+    display: flex;
+    margin: 1rem;
+    font-weight: 300;
+    
+    
+}
+
+.fa-ellipsis {
+    font-size: 40px;
+    
+}
+
+.sko-info {
+    margin: 1rem;
+}
+
+.sko-fargebak {
+    background-color: #D9D9D9;
+}
+
+.salgavdavid {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #F4EEFF;
+    
+}
+
+.salgavdavid h3 {
+    color: #262B54;
+    border-style: solid;
+}
+
+.profilselger a {
+    margin-left: 5px;
+    padding-top: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #262B54;
+}
+
+
+#veribruker {
+    display:block;
+    color: #262B54;
+    margin-left: 10px;
+    
+
+}
+
+#dotter {
+    text-align: center;
+}
+
+
+
+#size {
+    display: flex;
+    justify-content: right;
+    margin: 10px 20px;
+    font-size: 15px;
+}
+
+#tilstand {
+    font-size: 15px;
+}
+
+#krav {
+    outline: 2px solid #262B54; 
+    background-color: #DCD6F7;
+    color: #1d1c1c;
+    padding: 0.1rem;
+    
+}
+
+#bud {
+    outline: 2px solid #262B54; 
+    background-color: #DCD6F7;
+    color: #1d1c1c;
+    padding: 0.1rem;
+
+}
+
+#salg{
+    outline: 2px solid #262B54; 
+    background-color: #DCD6F7;
+    color: #1d1c1c;
+    padding: 0.1rem;
+    
+
+}
+
+#plaserbud {
+    outline: 2px solid #262B54; 
+    background-color: #ffffff;
+    color: #1d1c1c;
+    padding: 0.1rem;
+    margin: 1rem;
+}
+
+#kjøp {
+    outline: 2px solid #101853; 
+    background-color: #262B54;
+    color: #ece7e7;
+    padding: 0.1rem;
+    margin: 1rem;
+    padding: 2px 15px;
+}
+
+.fa-address-card {
+    margin: 1rem;
+}
+
+
+
+#navnchat2 {
+    font-size: 25px;
+    color: #262B54;
+}
+
+   
+
+
+#søkchat2 {
+    
+    display: block;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.3rem;
+    background-color: #ffffff;
+    
+    
+    
+ 
+}
+
+#søkchat2 input {
+    background-color: #DCD6F7;
+    width: 80%;
+    border: none;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    
+
+}
+
+footer p {
+    display: flex;
+    padding-top: 0px;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+
+.textV {
+    margin: 1rem;
+    font-size: 4vw;
+    text-align: left;
+    background-color: #DCD6F7;
+    padding: 0.5rem;
+    width: fit-content;
+    
+}
+
+.textV h2{
+    font-size: 4vw;
+}
+
+.textH h2{
+    font-size: 4vw;
+}
+
+.textH {
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 4vw;
+    text-align: right;
+    background-color: #F4EEFF;
+    width: fit-content;
+}
+
+
+
+
+
+
+@media only screen and (min-width:800px){
+
+    #grid-container{
+        display: grid;
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    
+    .fa-ellipsis {
+        font-size: 80px;
+    }
+
+    .fa-address-card {
+        margin: 1rem;
+        font-size: 45px;
+    }
+
+    .fa-phone {
+        font-size: 45px;
+    }
+
+    #navnchat2{
+        font-size: 30px;
+        text-align: left;
+    }
+
+
+.kostnad {
+
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+
+#tilstand h3 {
+    font-size: 35px;
+}
+
+section.kjøp {
+    margin-bottom: 50px;
+}
+
+section#produktback {
+
+    margin-bottom: 20px;
+}
+
+.sko-type img{
+
+    height: 150px;
+    width: 150px;
+   
+}
+
+.sko-info {
+    font-size: 30px;
+}
+
+.salgavdavid {
+    font-size: 30px;
+}
+
+#kjøp {
+    font-size: 45px;
+}
+
+#plaserbud {
+
+    font-size: 45px;
+}
+
+.bud {
+
+    font-size: 30px;
+}
+
+.profilselger a{
+
+    font-size: 40px;
+}
+
+.fa-id-card {
+    font-size: 50px;
+}
+
+#veribruker {
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+.fa-message {
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+
+.kostnad h3 {
+    font-size: 25px;
+}
+
+#size {
+    justify-content: center;
+    font-size: 35px;
+
+
+    }
+
+    .ProduktsideBilde {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        object-fit:scale-down;
+        margin: 1rem;
+        height: 700px;
+        width: 80%;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        
+    
+    }
+
+    
+
+    article.marked {
+
+        justify-content: space-between;
+    }
+
+
+
+    .marked {
+        display: flex;
+        grid-row: initial;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+
+   .marked img {
+        border-radius: 10px;
+        border: 2px solid #262B54;
+        height: 9.986vw;
+        width: 9.986vw;
+        object-fit: cover;
+        justify-content: space-between;
+    }
+    .marked-Q1 {
+        justify-content: space-between;
+        
+    }
+
+
+    .marked {
+        justify-content: center;
+        
+    }
+
+
+   
+
+    .reklame {
+        margin: 2rem;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+        border-left: 5px solid #F4EEFF;
+        border-right: 5px solid #F4EEFF;
+
+    }
+
+
+    #søk input{
+        font-size: 20px;
+        padding-right: 49.751vw;
+        margin-top: 10px;
+        background-color: #DCD6F7;
+        
+        
+    }
+
+    
+
+ 
+
+
+}
+
+
+@media only screen and (min-width:1000px){
+
+    .fa-address-card {
+        display: flex;
+        text-align: right;
+    }
+
+    #navnchat2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fa-id-badge {
+        font-size: 50px;
+        margin-right: 10px;
+    }
+
+    #ShoeMaster2k {
+        display: flex;
+        font-size: 20px;
+        flex-direction: row;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    #VennerDesk {
+        
+        font-size: 30px;
+    }
+
+    #chatside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 10pxs;
+    }
+
+    #søkchat2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        
+        
+        
+        
+        
+     
+    }
+    
+
+    #søkchat2 input {
+        background-color: #DCD6F7;
+        width: 100%;
+        border: none;
+        box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+        padding: 0.5rem;
+        
+    
+    }
+    
+    .textV {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        font-size: 21px;
+        text-align: left;
+        background-color: #DCD6F7;
+        padding: 0.5rem;
+        width: fit-content;
+        
+    }
+    
+    .textV h2{
+        font-size: 23px;
+    }
+    
+    .textH h2{
+        font-size: 23px;
+    }
+    
+    .textH {
+        padding: 0.5rem;
+        margin: 1rem;
+        font-size: 21px;
+        text-align: right;
+        background-color: #F4EEFF;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #SendMeldingDesk {
+        font-size: 25px;
+        padding: 0.7rem;
+
+    }
+
+
+    #Scroll-Nyeste {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        justify-content: space-between;
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .VennerSidenDesk section h3 {
+        display: block;
+        font-size: 25px;
+        margin: 0.5rem;
+        flex-direction: row;
+        
+
+    
+    }
+    .VennerSidenDesk section {
+        margin-bottom: 10px;
+        border: 0.5px solid #333;
+        background-color: #A6B1E1;
+        padding: 0.1rem;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        
+    }
+
+    .VennerSidenDesk section p {
+        font-size: 21px;
+    }
+
+
+
+    .chatmenydesk{
+        display: flex;
+        flex-direction:column;
+        margin: 0rem;
+        background-color: #F4EEFF;
+        padding-left: 20px;
+        padding-bottom: 40px;
+        padding-right: 10px;
+    }
+
+    .chatting{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.ulest {
+        background-color: #dddddd;
+    }
+
+}
+
+@media only screen and (max-width:1000px){
+    .fa-id-badge {
+        display: none;
+    }
+    .VennerSidenDesk {
+        display: none;
+    }
+
+    .VennerSidenDesk {
+            
+        display: none;
+    }
+
+    #Scroll-Nyeste {
+        display: none;
+    }
+
+    #ShoeMaster2k {
+        display: none;
+    }
+
+    #SendMeldingDesk {
+        display: none;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:800px){
+    .marked {
+        justify-content: space-between;
+
+    }
+
+  
+    .marked img {
+        border-radius: 10px;
+        border: 2px solid #262B54;
+        height: 29.333vw;
+        width: 26.667vw;
+        object-fit: cover;
+    }
+
+
+    .marked-Q1 {
+        display: none;
+    }
+
+    #marked-Q2 {
+        display: none;
+    }
+
+
+
+
+    .populære-merkerQ1 {
+        display: none;
+    }
+
+    #popQ1 {
+        display: none;
+    }
+
+    #popQ2 {
+        display: none;
+    }
+
+}
+
+    
+

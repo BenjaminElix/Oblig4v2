@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>HubSoleSociety</title>
+</head>
+<body>
+    <div id="grid-container">
+    <header>
+        <nav>
+            <i class="fa-solid fa-bars" style="color: #262b54;" id="burger-meny"></i>
+                <section>
+                     <h1><a href="index.html" id="logo">HubSoleSociety</a></h1>
+                </section>
+            <div class="symboler">
+                <a href="Chat.html" id="Chat1"><i class="fa-sharp fa-regular fa-comment fa-shake" style="color: #ff8800;"></i></a>
+                <i class="fa-sharp fa-regular fa-cart-shopping" style="color: #262b54;"></i>
+                <i class="fa-sharp fa-regular fa-user" style="color: #262b54;"></i>
+            </div>
+           
+        </nav>
+        <section id="søk">
+            <input type="text" placeholder="Search for your shoes..." >
+        </section>
+    </header>
+    <main>
+        
+        <section class="Google-Trends">
+            <h1>Analyse av Oblig3 oppgave</h1>
+             <h2>Nøkkelord undersøkelse</h2>
+             <p>Jeg skal finne visse nøkkelord som er relevante til nettsiden min og jeg har i bruk google trends </p>  
+             <ul>
+                <li>
+                    <h3>Shoes</h3>
+                    <p>Jeg la Shoes inn i google trends og fant ut at dette var en av de mest brukte ordene som ble brukt.</p>
+                    <p>Jeg valgte å bruke shoes fordi det er det mest brukte og lett søkte ordet for å finne sko rundt i verden.</p>
+                    <img src="analyse img/Shoes.PNG" alt="Shoes google trends" class="Trends-Bilder">
+                </li>
+                <li>
+                    <h3>Sneakers</h3>
+                    <p>Sneakers er et søkeord som blir brukt til mer spesefike sko. Med å bruke dette ordet får man opp folk som spesefikt leter etter etter en sko type og hvis din nettside kommer opp vil brukeren kanskje prøve ut siden.</p>
+                    <img src="analyse img/Sneakers.PNG" alt="Sneakers google trends" class="Trends-Bilder">
+                </li>
+                <li>
+                    <h3>SneakerHead</h3>
+                    <p>Jeg valgte sneakerhead fordi det er veldig relevant til nettsiden jeg lager. <br>HubSoleSociety handler om å lage et samfunn av "SneakerHeads" som vil snakke om sko og lage grupper der de kan dele meninger om sko, men også selge sko til hverandre. <br>Jeg sammenligna "SneakerHead" med "Sneaker Head" og det var flere som søkte etter "SneakerHead" enn "Sneaker Head".</p>
+                    <img src="analyse img/Sneaker head.PNG" alt="Sneaker head google trends" class="Trends-Bilder">
+                </li>
+             </ul>
+        </section>
+        
+    </main>
+    <footer>
+
+        <p id="kontakt">&copy; HubSoleSociety | Kontakt oss: HubSoleSociety@gmail.com</p>
+
+    </footer>
+    </div>
+    <script>
+        let x = document.querySelector(".navbar")
+
+document.getElementById("ham").addEventListener("click", (e) =>{
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+
+})
+    </script>
+
+</body>
+
+
+</html>

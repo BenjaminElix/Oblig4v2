@@ -663,6 +663,32 @@ footer p {
     max-width: 50%;
     max-height: 50%;
 }
+.Webaim h4 {
+    margin: 1rem;
+}
+
+.Webaim p {
+    margin: 1rem;
+}
+
+#SendMeldingDesk-text {
+    font-size: 0;
+}
+
+#Søkchat-text {
+    font-size: 0;
+}
+
+.ChatGpt {
+    text-align: center;
+    margin: 1rem;
+}
+
+.ChatGpt h3 {
+    margin: 1rem;
+}
+
+
 
 
 

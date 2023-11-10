@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chat Site for shoeheads">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
@@ -17,7 +18,7 @@
             <i class="fa-solid fa-address-card" style="color: #262b54;"></i>
             <h1 id="navnchat2">David Bryan</h1>
             <div class="symboler">
-                <a href="analyse.html">
+                <a href="analyse.html" aria-label="link-til-analyse-siden">
                     <i class="fa-solid fa-phone" style="color: #262b54;"></i>
                 </a>
             </div>
@@ -37,7 +38,8 @@
             <h2>ShoeMasterElix_2k</h2>
         </section>
         <section>
-            <input type="text" placeholder="Search for your friends" id="SendMeldingDesk">
+            <label for="SendMeldingDesk" id="SendMeldingDesk-text">search:</label>
+            <input type="text" placeholder="Search for your friends" id="SendMeldingDesk" aria-label="search for your friends">
         </section>
     </section>
     <section id="Scroll-Nyeste">
@@ -126,7 +128,8 @@
     </section>
 
     <section id="søkchat2">
-        <input type="text" placeholder="Send Melding" >
+        <label for="søkchat2" id="Søkchat-text">Send:</label>
+        <input type="text" placeholder="Send Melding" aria-label="Send Melding">
     </section>
 
 

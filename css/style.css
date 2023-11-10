@@ -425,6 +425,7 @@ section.kjøp {
     
 }
 
+
 .profilselger {
     display: flex;
     margin: 1rem;
@@ -624,10 +625,44 @@ footer p {
 .Google-Trends {
 
     text-align: center;
+    margin: 1rem;
 }
 
+.Lighthouse-Bilder {
+    max-width: 50%;
+    max-height: 50%;
+}
 
+.Lighthouse {
+    text-align: center;
+    margin: 1rem;
+}
 
+.Lighthouse p {
+    margin: 1rem;
+}
+
+.Lighthouse h4 {
+    margin: 0.5rem;
+}
+
+.Lighthouse h3 {
+    margin: 0.5rem;
+}
+
+.søk-text {
+    font-size: 0px;
+}
+
+.Webaim {
+    text-align: center;
+    margin: 1rem;
+}
+
+.Webaim-Bilder {
+    max-width: 50%;
+    max-height: 50%;
+}
 
 
 

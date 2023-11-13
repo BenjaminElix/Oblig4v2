@@ -14,7 +14,9 @@
 <body>
     <div id="grid-container">
     <header>
-        <nav>
+        <a class="skip" href="#Content" aria-label="Skip-til-main">Skip to main content</a>
+        <!--fikk malen til denne "Skip til hovedmeny" fra denne siden https://www.w3schools.com/accessibility/accessibility_skip_links.php brukte denne siden til css også-->
+        <nav role="navigation">
             <a href="analyse.html" aria-label="link-til-analyse-siden">
                 <i class="fa-solid fa-bars" style="color: #262b54;" id="burger-meny"></i>
             </a>
@@ -35,7 +37,7 @@
             <input type="text" id="sok" name="sok" placeholder="Search for your shoes..." aria-label="Search for your shoes...">
           </section>
     </header>
-    <main>
+    <main id="Content">
         <!--seksjon 1-->
         <section class="reklame">
             <img src="img/reklame2.png" alt="reklame">
@@ -128,7 +130,7 @@
                                     <h3>Grønn buse</h3>
                                     <p>Størrelse 44</p>
                                 </section>
-                            </article>        
+                            </article>
                         </section>
                     </section>
                     
@@ -138,7 +140,7 @@
 
 
         <section>
-            <h1><a href="produkter.html" id="blagjennom">Bla gjennom marked</a></h1>
+            <h1><a href="produkter.html" id="blagjennom" aria-label="Link-til-Produktside">Bla gjennom marked</a></h1>
         </section>
             
                 

@@ -13,10 +13,12 @@
 <body>
     <div id="grid-container">
     <header>
-        <nav>
+        <a class="skip" href="#Content">Skip to main content</a>
+        <!--fikk malen til denne "Skip til hovedmeny" fra denne siden https://www.w3schools.com/accessibility/accessibility_skip_links.php brukte denne siden til css også-->
+        <nav role="navigation">
             <i class="fa-solid fa-bars" style="color: #262b54;" id="burger-meny"></i>
                 <section>
-                     <h1><a href="index.html" id="logo">HubSoleSociety</a></h1>
+                    <a href="index.html" id="logo">HubSoleSociety</a>
                 </section>
             <div class="symboler">
                 <a href="Chat.html" id="Chat1"><i class="fa-sharp fa-regular fa-comment fa-shake" style="color: #ff8800;"></i></a>
@@ -29,7 +31,7 @@
             <input type="text" placeholder="Search for your shoes..." >
         </section>
     </header>
-    <main>
+    <main id="Content">
         
         <section class="Google-Trends">
             <h1>Analyse av Oblig3 oppgave</h1>
@@ -114,7 +116,7 @@
 
                     <h4>Etter fiks</h4>
                     <img src="analyse_img/Webaim/analyse-av-index-fikset.PNG" alt="Webaim-desktop-index-fikset" class="Webaim-Bilder">
-                    <p>Problemene jeg hadde med siden min var at jeg manglet formlabel på søkebaren min rett under menyen, og en av meny ikonene mine var en empty link osm jeg måtte fikse.</p>
+                    <p>Problemene jeg hadde med siden min var at jeg manglet formlabel på søkebaren min rett under menyen, og en av meny ikonene mine var en empty link som jeg måtte fikse.<br>Disse fiksene gjorde det lettere å bruke nettsiden siden den ikke lenger hadde empty links og skrivebokser som mangelt labels. </p>
                 </li>
                 <li>
                     <h3>Webaim produkter</h3>
@@ -124,7 +126,7 @@
 
                     <h4>Etter fiks</h4>
                     <img src="analyse_img/Webaim/produkter-feil-fikset.PNG" alt="Webaim-dekstop-produkt-fiks" class="Webaim-Bilder">
-                    <p>Problmet var nesten likt som på index siden så jeg hadde oppskriften på å løse "missing empty link" problemet som var på siden.</p>
+                    <p>Problmet var nesten likt som på index siden så jeg hadde oppskriften på å løse "missing empty link" problemet som var på siden. <br> Etter fiks ble nettsiden mer burker vennlig, med lenker som ikke er empty, som er essentielt for en strukurert nettside.</p>
                 </li>
                 <li>
                     <h3>Webaim chat</h3>
@@ -181,6 +183,9 @@
                     <h5>JavaScript</h5>
                     <p>Det er en hendelseslytter for et element med klassen "navbar", men denne klassen er ikke definert i HTML-en du har delt. Sørg for at JavaScript-funksjonaliteten fungerer som forventet.</p>
 
+                    <h6>Screenshot av ChatGPT index analyse</h6>
+                    <img src="analyse_img/ChatGPT/Index-ChatGPY-analyse.PNG" alt="Index-ChatGPY-analyse" class="ChatGPT-Bilder">
+
                 </li>         
                 <li>
                     <h3>Løsninger til Chat Side</h3>
@@ -219,6 +224,9 @@
 
                     <h5>Stilark</h5>
                     <p>Det ser ut til å mangle en ekstern stilfil (style.css). Bruk av eksterne stilfiler gjør det lettere å vedlikeholde og organisere koden.</p>
+
+                    <h6>Screenshot av ChatGPT Chatside analyse</h6>
+                    <img src="analyse_img/ChatGPT/Chat-ChatGPT-analyse.PNG" alt="Chat-ChatGPT-analyse" class="ChatGPT-Bilder">
                     
                 </li>
                 <li>
@@ -255,6 +263,10 @@
 
                     <h5>JavaScript</h5>
                     <p>Det er en hendelseslytter for et element med klassen "navbar", men denne klassen er ikke definert i HTML-en du har delt. Sørg for at JavaScript-funksjonaliteten fungerer som forventet.</p>
+                    
+                    <h6>Screenshot av ChatGPT produktside analyse</h6>
+                    <img src="analyse_img/ChatGPT/produkt-ChatGPT.PNG" alt="ChatGpt-Analyse-av-Produktside" class="ChatGPT-Bilder">
+
                 </li>
             </ul>
         </section>
@@ -272,22 +284,114 @@
                     <tr>
                         <td>SEO</td>
                         <td>Gir generell informasjon. <br> Hjalp med meta description.</td>
-                        <td>Ingenting</td>
+                        <td>Ingenting, man burde bruke <br>lighthouse i stedet for mer <br>nyaktig hjelp.</td>
                         <td>Ufordypende informasjon <br> men hjelpsom. <br> </td>
                     </tr>
                     <tr class="active-row">
                         <td>UU</td>
-                        <td>Lite informasjon</td>
-                        <td>Gir veldig god UU <br> informasjon i dybde. <br>Hjalp med å identifisere: <br>Missing labels og empty links. </td>
-                        <td>Ufordypende informasjon <br> men hjelpsom</td>
+                        <td>Lite informasjon som ikke viser <br>direkte problemet, noe Webaim gjør.</td>
+                        <td>Gir veldig god UU <br> informasjon i dybde. Hjalp med å identifisere: <br>Missing labels og empty links. Gir mest nyaktig informasjon av alle <br>de andre hjelpe middlene.</td>
+                        <td>Ufordypende informasjon der man <br>bare for vite hvor feilen er.<br>SEO er noe Lighthouse gjør bedre</td>
                     </tr>
                     <!-- https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l Jeg fikk tabell malen herfra, men har endret på den og gjort den til min-->
                 </tbody>
             </table>
-              
+        </section>
+        <section class="Tilgjengelighet-analyse">
+            <ul>
+                <li>
+                    <h2>Tilgjengelighet</h2>
+                    <h3>Skjermleserkompatibilitet</h3>
+                    <h4>Index side</h4>
+                    <p>Skjermleseren leser gjennom hele nettsiden fra topp til bunn, men utelater toppmenyen. <br> Dette utgjør en betydelig utfordring for personer som er avhengige av skjermlesere, da de ikke får informasjon de trenger om de tilgjengelige alternativene. <br>Dette er spesielt problematisk fordi de fleste funksjonene som gir tilgang til andre deler av nettsiden, er representert av ikoner i toppmenyen, som ikke blir nevnt. <br>Dette begrenser brukerens evne til å utforske og dra nytte av full funksjonalitet, og det er avgjørende å rette opp dette for å sikre en mer tilgjengelig opplevelse.</p>
+                </li>
+                <li>
+                    <h4>Produkt side</h4>
+                    <p>På produktsiden er det et problem med skjermleseren. Den leser gjennom alt fra øverst til nederst, men hopper dessverre over menyen øverst. <br>Dette gjør det vanskelig for de som bruker skjermlesere, fordi de går glipp av viktig informasjon i menyen.</p>
+                </li>
+                <li>
+                    <h4>Chat Side</h4>
+                    <p>Den starter med å lese brukerens brukernavn, deretter beveger seg nedover gjennom ulike samtaler brukeren har hatt med andre. <br>Deretter går den gjennom meldingene brukeren har utvekslet med en spesifikk person. Skjermleseren har dessverre vanskeligheter med å lese opp både ringeknappen og brukernavnet til personen vi forsøker å kommunisere med. <br>Når viktige elementer som ringeknappen og brukernavnet ikke blir riktig lest opp, kan det hindre en fullstendig og effektiv kommunikasjon. </p>
+                </li>
+                <li>
+                    <h3>Tastaturnavigasjon</h3>
+                    <h4>Index side</h4>
+                    <p>Når jeg bruker tastaturnavigasjon, opplever jeg begrensninger i tilgangen til nettstedet. <br>Jeg kan kun navigere til sidene som har direkte koblinger, mens annet innhold blir oversett eller hoppet over.</p>
+
+                    <h4>Produkt side</h4>
+                    <p>Under tastaturnavigasjon er jeg kun i stand til å nå sidene jeg har direkte koblinger til, mens andre deler av nettstedet blir oversett. <br>Dette kan gjøre det vansklig for brukere som trenger skjermleser funksjonen.</p>
+
+                    <h4>Chat Side</h4>
+                    <p>Under tastaturnavigasjon er det kun mulig for meg å få tilgang til sidene som har direkte koblinger., mens andre deler av nettstedet blir oversett. <br>Man får bare gått gjennom telefon ikon, vennersøkebar og sendmeldingbar.</p>
+                </li>
+        </section>
+        <section class="hovedinnhold-snarvei">
+            <ul>
+                <li class="Snarvei-Mellomrom">
+                    <h2>Skip til hovedinnhold snarvei</h2>
+                                    
+                    <h3>Analyse siden</h3>
+                    <h4>Analyse siden før</h4>
+                    <img src="analyse_img/Snarvei-til-main/Analyse-side-før.PNG" alt="Snarvei-til-main-Analyseside" class="Tilgjengelighet-Bilder">
+                    <p>Nettsiden manglet en hurtigsnarvei til hovedinnholdet, noe som reduserer brukervennligheten for de som muligens ville ha nytte av det.</p>
+                    <h4>Analyse side etter</h4>
+                    <img src="analyse_img/Snarvei-til-main/Analyse-side-etter.PNG" alt="Snarvei-til-main-Analyseside" class="Tilgjengelighet-Bilder">
+                    <p>Etter å ha oppdaget fraværet av en hurtigsnarveiknapp, ble det lagt til for å forbedre brukervennligheten for alle.</p>
+                </li>
+                <li class="Snarvei-Mellomrom">
+
+                    <h3>Index siden</h3>
+                    <h4>Index side før</h4>
+                    <img src="analyse_img/Snarvei-til-main/Index-side-før.PNG" alt="Snarvei-til-main-Index" class="Tilgjengelighet-Bilder">
+                    <p>På forsiden er det viktig med en hurtigsnarveiknapp siden dette gir første intrykk til en bruker som vil ha nytte for dette, <br> hvis en brueker som behøver dette legger merke til det så kasnkje gir det et bedre første intrykk til å bruke siden og mer troverdighet til å handle på nettsiden</p>
+                    <h4>Index side etter</h4>
+                    <img src="analyse_img/Snarvei-til-main/Index-side-etter.PNG" alt="Snarvei-til-main-Index" class="Tilgjengelighet-Bilder">
+                    <p>Etter hurtigsnarveiknapp ble lagt til så vil siden funke bedre for alle spesielt de som har behov for det.</p>
+                </li>
+                <li class="Snarvei-Mellomrom">
+
+                    <h3>Chat siden</h3>
+                    <h4>Chat side før</h4>
+                    <img src="analyse_img/Snarvei-til-main/Chat-side-før.PNG" alt="Snarvei-til-main-Chat" class="Tilgjengelighet-Bilder">
+                    <p>Nettsiden manglet en hurtigsnarvei til hovedinnholdet, noe som reduserer brukervennligheten for de som muligens ville ha nytte av det.</p>
+                    <h4>Chat side etter</h4>
+                    <img src="analyse_img/Snarvei-til-main/Chat-side-etter.PNG" alt="Snarvei-til-main-Chat" class="Tilgjengelighet-Bilder">
+                    <p>Etter hurtigsnarveiknapp ble lagt til, legger dette til brukervennligheten til nettsiden.</p>
+                </li>
+                <li class="Snarvei-Mellomrom">
+                    <h3>Produkt siden</h3>
+                    <h4>Produkt siden før</h4>
+                    <img src="analyse_img/Snarvei-til-main/Produktside-før.PNG" alt="Snarvei-til-main-Produktside" class="Tilgjengelighet-Bilder">
+                    <p>Mangler bruker vennlighet på grunn av mangel på hurtigsnarveiknapp</p>
+                    <h4>Produkt side etter</h4>
+                    <img src="analyse_img/Snarvei-til-main/Produktside-etter.PNG" alt="Snarvei-til-main-Produktside" class="Tilgjengelighet-Bilder">
+                    <p>Etter å ha lagt til hurtigsnarveiknapp blir dermed bruekr vennligheten sterkere.</p>
+                </li>
+                <li>
+                    <h3>Koden brukt til alle sidene</h3>
+                    <h4>Koden før fiks</h4>
+                    <img src="analyse_img/Snarvei-til-main/Kode før.PNG" alt="Snarvei-kode-før" class="Tilgjengelighet-Bilder">
+                </li>
+                <li>
+                    <h4>Koden etter fiks</h4>
+                    <img src="analyse_img/Snarvei-til-main/Kode Etter.PNG" alt="Snarvei-kode-etter" class="Tilgjengelighet-Bilder">
+                    <p>Denne koden ble brukt til alle nettsidene mine for å løse problmet jeg hadde med brukervennlighet for tastaturnavigasjon.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="Aria-attributter">
+            <ul>
+                <li>
+                    <h3>Aria-attributter</h3>
+                    <h4>Brukt på alle nettsidene. (index, chat og produktside)</h4>
+                </li>
+                <li>
+                    <h5>Aira-role</h5>
+                </li>
+            </ul>
 
         </section>
-        
+               
     </main>
     <footer>
 

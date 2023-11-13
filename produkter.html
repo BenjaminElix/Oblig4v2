@@ -14,7 +14,9 @@
 <body>
     <div id="grid-container">
     <header>
-        <nav>
+        <a class="skip" href="#Content" aria-label="Skip-til-main">Skip to main content</a>
+        <!--fikk malen til denne "Skip til hovedmeny" fra denne siden https://www.w3schools.com/accessibility/accessibility_skip_links.php brukte denne siden til css også-->
+        <nav role="navigation">
             <a href="analyse.html" aria-label="link-til-analyse-siden">
                 <i class="fa-solid fa-bars" style="color: #262b54;" id="burger-meny"></i>
             </a>
@@ -36,7 +38,7 @@
               </section>
         </header>
 
-    <main>
+    <main id="Content">
         <section id="ProduktsideBak">
             <h1 id="ProduktsideProdukt"> Tumberlund</h1>
             <section class="ProduktsideBilde">
@@ -80,7 +82,7 @@
         <section class="bakselger">
             <section class="profilselger">
                 <i class="fa-sharp fa-solid fa-id-card" style="color: #262b54;"></i>
-                <a href="Chat.html">David Bryan</a>
+                <a href="Chat.html" aria-label="Link-til-Chatside">David Bryan</a>
             </section>
             <section class="profilselger2">
                 <p id="veribruker">Verfisert selger</p>

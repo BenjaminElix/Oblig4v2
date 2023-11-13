@@ -662,6 +662,8 @@ footer p {
 .Webaim-Bilder {
     max-width: 50%;
     max-height: 50%;
+    object-fit: contain;
+    min-width: 500px;
 }
 .Webaim h4 {
     margin: 1rem;
@@ -696,13 +698,19 @@ footer p {
     margin-top: 1rem;
 }
 
+.ChatGpt h6 {
+    margin-top: 10px;
+}
+
 .Tabell-Analyse {
     display: flex;
 }
 
 
+/*https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l Jeg fikk tabell malen herfra, men har endret på den og gjort den til min*/
 .styled-table {
     border-collapse: collapse;
+    width: 80%;
     margin: auto;
     font-size: 0.9em;
     font-family: sans-serif;
@@ -717,14 +725,100 @@ footer p {
 
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
+    padding: 12px 5px;
+}
+/*-----------------------------------------STOP---------------------------------------------------------------------------------------------------*/
+
+
+.ChatGPT-Bilder {
+    max-height: 50%;
+    max-width: 50%;
+    min-width: 400px;
+    min-height: auto;
+    object-fit: cover;
+}
+
+.Tilgjengelighet-analyse {
+    text-align: center;
+    margin: 1rem;
+}
+
+.Tilgjengelighet-analyse h3 {
+    margin: 1rem;
+}
+
+.Tilgjengelighet-analyse h4 {
+    margin-top: 10px;
 }
 
 
+/*Fikk denne css malen fra denne https://www.w3schools.com/accessibility/accessibility_skip_links.php brukte samme nettside til html koden også*/
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+/*<!------------------------------------------STOP----------------------------------------------------------------------------------------------------->*/
+
+  .Tilgjengelighet-Bilder {
+    max-height: 50%;
+    max-width: 50%;
+    
+  }
+
+  .Tilgjengelighet-analyse {
+    margin: 1rem;
+
+  }
+
+  .Tilgjengelighet-analyse h3 {
+    margin-top: 10px;
 
 
+  }
+
+  .hovedinnhold-snarvei {
+    text-align: center;
+    margin: 1rem;
+
+  }
+  
+  .hovedinnhold-snarvei h3 {
+    margin-top: 20px;
+  }
 
 
+  .Snarvei-Mellomrom {
+    margin-top: 100px;
+    background-color: #f5f2ffbb;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: #262B54;
+    
+    
+  }
+  
+  .Snarvei-Mellomrom h3{
+    margin: 1rem;
+  }
+
+  .Snarvei-Mellomrom h4 {
+    margin-top: 10px;
+  }
+
+  .Aria-attributter{
+    text-align: center;
+  }
 
 @media only screen and (min-width:800px){
 
@@ -1112,6 +1206,31 @@ section#produktback {
     .marked {
         justify-content: space-between;
 
+    }
+
+    .Webaim-Bilder {
+        min-width: 100%;
+        min-height: auto;
+    }
+
+    .Lighthouse-Bilder {
+        min-width: 100%;
+        min-height: auto;
+    }
+
+    .Trends-Bilder {
+        min-width: 100%;
+        min-height: auto;
+    }
+
+    .ChatGPT-Bilder {
+        min-width: 100%;
+        min-height: auto;
+    }
+
+    .Tilgjengelighet-Bilder {
+        min-width: 100%;
+        min-height: auto;
     }
 
   
